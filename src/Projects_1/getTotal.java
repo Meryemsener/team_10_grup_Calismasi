@@ -1,8 +1,10 @@
 package Projects_1;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+
 public class getTotal {
 
       /*
@@ -41,6 +43,8 @@ public class getTotal {
 
         String num1 = elements[0];
 
+        String num2 = elements[1];
+
         String num3 = elements[2];
 
         //  code Start here don't change before this line
@@ -49,26 +53,40 @@ public class getTotal {
         // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
         // String num1,num2,num3 kullanın
 
-
         System.out.println("Arrayin ilk elemani : " + num1);
+        System.out.println("Arrayin ikinci elemani : " + num2);
         System.out.println("Arrayin ücüncü elemani : " + num3);
         List<String> list = new ArrayList<String>(Arrays.asList(allElements.split(" ")));
         System.out.println("List : " + list);
-        List<String> list2 = new ArrayList<>();
+
+        List<Integer> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+
         int toplam = 0;
+
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).contains("-")) {
-                System.out.println("-1");
-                break;
-            } else {
                 elements[i] = list.get(i).replaceAll("\\D", "").trim();
-                list2.add(elements[i]);
-                toplam += Integer.valueOf(list2.get(i));
+                list2.add(Integer.valueOf(list.get(i)));
+                toplam += Math.abs(list2.get(i));
+                System.out.println("Negatif sayilar liste : " + list2);
             }
         }
-        System.out.println("Sayisal olmayan karakterlerin kaldirilmis hali : " + list2);
+
+        System.out.println("Negatif sayilarin toplami : " + toplam);
+
+
+        for (int j = 0; j < list.size(); j++) {
+            if (!list.get(j).contains("-")) {
+                elements[j] = list.get(j).replaceAll("\\D", "").trim();
+                list3.add(elements[j]);
+                toplam += Integer.valueOf(list3.get(j));
+            }
+        }
+        System.out.println("Sayisal olmayan karakterlerin kaldirilmis hali : " + list3);
         System.out.println("Sayisal degerlerin toplam : " + toplam);
     }
 }
+
 
 
