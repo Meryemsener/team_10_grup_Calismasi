@@ -6,6 +6,12 @@ public class twoString {
         System.out.println("defgsiklil");
         System.out.println("bir diger degsiklik");
         System.out.println("degisim" +
+                "");System.out.println("defgsiklil");
+        System.out.println("bir diger degsiklik");
+        System.out.println("degisim" +
+                "");System.out.println("defgsiklil");
+        System.out.println("bir diger degsiklik");
+        System.out.println("degisim" +
                 "");
 
 
