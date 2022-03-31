@@ -25,6 +25,12 @@ public class checkNumberEven {
         //  code Start here don't change before this line
         // Kodu burdan baslatin ve bu satırdan önceki kodlari değiştirmeyin
 
-        
+        //Dosyada degisiklik yaptim.
+
+        int sayi1=10;
+        int sayi2=40;
+
+        sayi1+=50;
+
     }
 }
