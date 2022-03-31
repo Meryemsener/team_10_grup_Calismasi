@@ -18,7 +18,7 @@ public class RandomNum {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("bir sayi giriniz : ");
+        System.out.print("bir sayi giriniz lutfen: ");
         int max=scanner.nextInt();
 
         //  code Start here don't change before this line
