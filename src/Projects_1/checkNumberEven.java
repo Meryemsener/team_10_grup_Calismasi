@@ -25,6 +25,6 @@ public class checkNumberEven {
         //  code Start here don't change before this line
         // Kodu burdan baslatin ve bu satırdan önceki kodlari değiştirmeyin
 
-        
+        //Dosyada degisiklik yaptim.
     }
 }
