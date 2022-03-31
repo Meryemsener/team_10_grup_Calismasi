@@ -29,7 +29,7 @@ ters arrayi yazdır
 
         //        code start here
         //        Koda burdan başlayın
-
+           //Deneme
 
 
     }
