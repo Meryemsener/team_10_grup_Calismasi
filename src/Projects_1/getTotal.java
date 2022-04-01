@@ -36,15 +36,11 @@ public class getTotal {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
         String allElements = scanner.nextLine();
-
-        String[] elements = allElements.split(" ");
+        String[] elements = allElements.split(" "); // 10 20 30
 
         String num1 = elements[0];
-
         String num2 = elements[1];
-
         String num3 = elements[2];
 
         //  code Start here don't change before this line
@@ -56,37 +52,59 @@ public class getTotal {
         System.out.println("Arrayin ilk elemani : " + num1);
         System.out.println("Arrayin ikinci elemani : " + num2);
         System.out.println("Arrayin ücüncü elemani : " + num3);
-        List<String> list = new ArrayList<String>(Arrays.asList(allElements.split(" ")));
+
+        List<String> list = new ArrayList<>(Arrays.asList(allElements.split(" ")));
         System.out.println("List : " + list);
 
         List<Integer> list2 = new ArrayList<>();
-        List<String> list3 = new ArrayList<>();
+        //List<String> list3 = new ArrayList<>();
 
         int toplam = 0;
 
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).contains("-")) {
+        for (int i = 0; i < elements.length; i++) {
+            if (elements[i].contains("-")) {
+
                 elements[i] = list.get(i).replaceAll("\\D", "").trim();
-                list2.add(Integer.valueOf(list.get(i)));
-                toplam += Math.abs(list2.get(i));
-                System.out.println("Negatif sayilar liste : " + list2);
+                list2.add(Math.abs(Integer.parseInt(elements[i])));
+                toplam += Integer.parseInt(elements[i]);
+
+            } else {
+                elements[i] = list.get(i).replaceAll("\\D", "").trim();
+
+                list2.add(Integer.parseInt(elements[i]));
+                toplam += Integer.parseInt(elements[i]);
             }
+
+
         }
-
-        System.out.println("Negatif sayilarin toplami : " + toplam);
-
-
-        for (int j = 0; j < list.size(); j++) {
-            if (!list.get(j).contains("-")) {
-                elements[j] = list.get(j).replaceAll("\\D", "").trim();
-                list3.add(elements[j]);
-                toplam += Integer.valueOf(list3.get(j));
-            }
-        }
-        System.out.println("Sayisal olmayan karakterlerin kaldirilmis hali : " + list3);
-        System.out.println("Sayisal degerlerin toplam : " + toplam);
+        // System.out.println("List2 : " + list2);
+        System.out.println("Toplam : " + toplam);
     }
 }
+
+
+//
+//            if (list.get(i).contains("-")) {
+//                elements[i] = list.get(i).replaceAll("\\D", "").trim();
+//                list2.add(Integer.valueOf(Math.abs(list2.get(i))));
+//                toplam += Math.abs(list2.get(i));
+//                System.out.println("Negatif sayilar liste : " + list2);
+//            }
+//        }
+//
+//        System.out.println("Negatif sayilarin toplami : " + toplam);
+
+
+//        for (int j = 0; j < list.size(); j++) {
+//            if (!list.get(j).contains("-")) {
+//                elements[j] = list.get(j).replaceAll("\\D", "").trim();
+//                list3.add(elements[j]);
+//                toplam += Integer.valueOf(list3.get(j));
+//            }
+//        }
+//        System.out.println("Sayisal olmayan karakterlerin kaldirilmis hali : " + list3);
+//        System.out.println("Sayisal degerlerin toplam : " + toplam);
+
 
 
 
