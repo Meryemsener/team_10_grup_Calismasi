@@ -25,6 +25,6 @@ public class totalLetterCountCheck {
         int sayi=1;
        String str ="ahmet";
        String str1= "mehmet";
-
+        String str2=" hakan";
     }
 }

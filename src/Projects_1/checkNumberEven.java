@@ -32,7 +32,5 @@ public class checkNumberEven {
 
         sayi1+=50;
 
-        //Github Bilgi yukluyorum.
-
     }
 }
