@@ -35,6 +35,7 @@ public class checkNumberEven {
 
 
         //Intellijeyi resetledim.
+        //github dan kendi bilgisayirama gonderiyorum.
 
     }
 }
