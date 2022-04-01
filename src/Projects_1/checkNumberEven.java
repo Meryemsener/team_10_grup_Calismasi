@@ -18,19 +18,23 @@ public class checkNumberEven {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
 
         int number = scanner.nextInt();
 
         //  code Start here don't change before this line
-        // Kodu burdan baslatin ve bu satırdan önceki kodlari değiştirmeyin
+        // Kodu burdan baslatin ve bu satırdan önceki kodlari değiştirmeyin*/
 
         //Dosyada degisiklik yaptim.
 
         int sayi1=10;
         int sayi2=40;
 
-        sayi1+=50;
+        sayi1+=10;
+        System.out.println("sayi1 degeri:" + sayi1);
+
+
+        //Intellijeyi resetledim.
 
     }
 }
