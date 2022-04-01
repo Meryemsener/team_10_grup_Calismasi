@@ -32,5 +32,7 @@ public class checkNumberEven {
 
         sayi1+=50;
 
+        System.out.println("Suanda github ogreniyoruz.");
+
     }
 }
