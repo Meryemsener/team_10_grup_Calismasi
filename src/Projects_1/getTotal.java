@@ -37,7 +37,7 @@ public class getTotal {
 
         Scanner scanner = new Scanner(System.in);
         String allElements = scanner.nextLine();
-        String[] elements = allElements.split(" "); // 10 20 30
+        String[] elements = allElements.split(" ");
 
         String num1 = elements[0];
         String num2 = elements[1];
@@ -57,30 +57,22 @@ public class getTotal {
         System.out.println("List : " + list);
 
         List<Integer> list2 = new ArrayList<>();
-        //List<String> list3 = new ArrayList<>();
+        List<Integer> list3 = new ArrayList<>();
 
         int toplam = 0;
-
-        for (int i = 0; i < elements.length; i++) {
-            if (elements[i].contains("-")) {
-
-                elements[i] = list.get(i).replaceAll("\\D", "").trim();
-                list2.add(Math.abs(Integer.parseInt(elements[i])));
-                toplam += Integer.parseInt(elements[i]);
-
-            } else {
-                elements[i] = list.get(i).replaceAll("\\D", "").trim();
-
+        int i = 0;
+        do {
+                elements[i] = String.valueOf(Integer.parseInt(num1.replaceAll("[€$A-Za-z]", "")));
                 list2.add(Integer.parseInt(elements[i]));
-                toplam += Integer.parseInt(elements[i]);
+                toplam += list2.get(i);
+
+                if (toplam<0{}
+            //elements[i] = list.get(i).replaceAll("\\D", "");
             }
+            while (i < elements.length) ;
 
 
-        }
-        // System.out.println("List2 : " + list2);
-        System.out.println("Toplam : " + toplam);
-    }
-}
+//elements[i] = list.get(i).replaceAll("\\D", "").trim();
 
 
 //
@@ -105,6 +97,5 @@ public class getTotal {
 //        System.out.println("Sayisal olmayan karakterlerin kaldirilmis hali : " + list3);
 //        System.out.println("Sayisal degerlerin toplam : " + toplam);
 
-
-
-
+        }
+    }
