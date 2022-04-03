@@ -44,10 +44,13 @@ ters arrayi yazdır
         System.out.println(Arrays.toString(tersArr));// arrayimi tersini yazdirmak icin
 >>>>>>> ustun
     }
-    // private static int[] arrayiTersineCevir(int x, int y, int[] arr, int[] tersArr) {
-    // if (Devami Gelecel){
-
-
-    //   }
-    // }
+     private static int[] arrayiTersineCevir(int x, int y, int[] arr, int[] tersArr) {
+         if (y >= 0) {
+             tersArr[x] = arr[y];
+             y--;
+             x++;
+             arrayiTersineCevir(x, y, arr, tersArr);
+         }
+         return tersArr;
+     }
 }
