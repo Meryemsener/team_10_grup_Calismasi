@@ -20,6 +20,22 @@ public class sumTotal {
     public static void main(String[] args) {
 
 //        Koda burdan başlayın
+        String arr[][]={{"$12" , "$22" , "5$"},{"€9" , "€40" , "$1" , "$2"}, {"€12"}};
+        for (int i = 0; i <arr.length; i++) {
+            for (int j = 0; j<arr[i].length ; j++) {
+                if (arr[i][j].substring(0,1).equals("$")){
+                    System.out.println(Double.valueOf(arr[i][j].substring(1))*(3.2));
+                }
+                else if(arr[i][j].substring(0,1).equals("€")){
+                    System.out.println(Double.valueOf(arr[i][j].substring(1))*(4.2));
+
+                }
+
+            }
+
+        }
+
+
 
 
     }
