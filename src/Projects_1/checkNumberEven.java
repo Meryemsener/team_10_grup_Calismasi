@@ -1,5 +1,7 @@
 package Projects_1;
+
 import java.util.Scanner;
+
 public class checkNumberEven {
     /*
         Given an int check the number is even or not
@@ -19,20 +21,21 @@ public class checkNumberEven {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println("Lütfen bir sayi giriniz");
         int number = scanner.nextInt();
 
         //  code Start here don't change before this line
         // Kodu burdan baslatin ve bu satırdan önceki kodlari değiştirmeyin
 
-        //Dosyada degisiklik yaptim.
 
-        int sayi1=10;
-        int sayi2=40;
 
-        sayi1+=50;
-
-        System.out.println("Suanda github ogreniyoruz.");
+        if (number % 2 == 0) {
+            System.out.println("bu bir cift sayidir.");
+        } else
+            System.out.println("Bu  bir tek sayidir");
 
     }
+
+
 }
+
