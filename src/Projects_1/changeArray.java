@@ -21,7 +21,7 @@ public class changeArray {
        Result böyle olmalı --> : Peach , Berry , Apple , WaterMelon , Apple
        Arrayi print edin
      */
-   gi
+
 
 //        Koda burdan başla
 //        kullanman gereken -> UseThisArray
