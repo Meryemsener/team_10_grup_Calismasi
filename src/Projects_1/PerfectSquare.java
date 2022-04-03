@@ -15,7 +15,7 @@ public class PerfectSquare {
         Note: this number is perfect square because 5*5 is 25
         Example 3:
         Input: 14
-        Output: false
+        Output: false.
      */
 
     /*
