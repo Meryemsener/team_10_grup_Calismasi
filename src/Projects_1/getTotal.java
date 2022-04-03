@@ -49,53 +49,27 @@ public class getTotal {
         // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
         // String num1,num2,num3 kullanın
 
-        System.out.println("Arrayin ilk elemani : " + num1);
-        System.out.println("Arrayin ikinci elemani : " + num2);
-        System.out.println("Arrayin ücüncü elemani : " + num3);
-
         List<String> list = new ArrayList<>(Arrays.asList(allElements.split(" ")));
-        System.out.println("List : " + list);
+        System.out.println("Girilen elemanlar : " + list);
 
         List<Integer> list2 = new ArrayList<>();
-        List<Integer> list3 = new ArrayList<>();
 
         int toplam = 0;
         int i = 0;
         do {
-                elements[i] = String.valueOf(Integer.parseInt(num1.replaceAll("[€$A-Za-z]", "")));
-                list2.add(Integer.parseInt(elements[i]));
-                toplam += list2.get(i);
-
-                if (toplam<0{}
-            //elements[i] = list.get(i).replaceAll("\\D", "");
-            }
-            while (i < elements.length) ;
-
-
-//elements[i] = list.get(i).replaceAll("\\D", "").trim();
-
-
-//
-//            if (list.get(i).contains("-")) {
-//                elements[i] = list.get(i).replaceAll("\\D", "").trim();
-//                list2.add(Integer.valueOf(Math.abs(list2.get(i))));
-//                toplam += Math.abs(list2.get(i));
-//                System.out.println("Negatif sayilar liste : " + list2);
-//            }
-//        }
-//
-//        System.out.println("Negatif sayilarin toplami : " + toplam);
-
-
-//        for (int j = 0; j < list.size(); j++) {
-//            if (!list.get(j).contains("-")) {
-//                elements[j] = list.get(j).replaceAll("\\D", "").trim();
-//                list3.add(elements[j]);
-//                toplam += Integer.valueOf(list3.get(j));
-//            }
-//        }
-//        System.out.println("Sayisal olmayan karakterlerin kaldirilmis hali : " + list3);
-//        System.out.println("Sayisal degerlerin toplam : " + toplam);
-
+            elements[i] = elements[i].replaceAll("[%€$A-Za-z]", "");
+            list2.add(Integer.parseInt(elements[i]));
+            toplam += list2.get(i);
+            i++;
         }
+        while (i < elements.length);
+
+        System.out.println("Sayisal olmayan degerlerin kaldirilmis hali : " + list2);
+
+        if (toplam < 0) {
+            System.out.println("-1");
+
+        } else System.out.println("Toplam : " + toplam);
+
     }
+}
