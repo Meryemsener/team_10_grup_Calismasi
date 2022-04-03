@@ -21,15 +21,43 @@ public class changeArray {
        Result böyle olmalı --> : Peach , Berry , Apple , WaterMelon , Apple
        Arrayi print edin
      */
-    public static void main(String[] args) {
-
-        Scanner scan = new Scanner(System.in);
-        String myStr = scan.nextLine();
-        String[] UseThisArray = myStr.split(" ");
+   gi
 
 //        Koda burdan başla
 //        kullanman gereken -> UseThisArray
 
+        public static void main (String[]args){
 
+            Scanner scan = new Scanner(System.in);
+
+            System.out.println("Lutfen meyve isimleri giriniz");
+
+            // myStr = input, UseThisArry= fruits
+
+
+            String input = scan.nextLine();
+            String[] fruits = input.split(" ");
+            // String[] out
+
+            for (int i = 0; i < fruits.length; i++) {
+
+                if (fruits[i].toLowerCase().equals("orange")) {
+                    fruits[i] = "Apple";
+                }
+
+            }
+
+            for (int i = 0; i < fruits.length; i++) {
+
+                if (i == fruits.length - 1) {
+                    System.out.print(fruits[i] + " ");
+                } else {
+                    System.out.print(fruits[i] + " , ");
+                }
+
+            }
+
+        }
     }
-}
+
+
