@@ -1,8 +1,10 @@
 package Projects_1;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+
 public class getTotal {
 
       /*
@@ -34,13 +36,11 @@ public class getTotal {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
         String allElements = scanner.nextLine();
-
         String[] elements = allElements.split(" ");
 
         String num1 = elements[0];
-
+        String num2 = elements[1];
         String num3 = elements[2];
 
         //  code Start here don't change before this line
@@ -49,26 +49,27 @@ public class getTotal {
         // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
         // String num1,num2,num3 kullanın
 
+        List<String> list = new ArrayList<>(Arrays.asList(allElements.split(" ")));
+        System.out.println("Girilen elemanlar : " + list);
 
-        System.out.println("Arrayin ilk elemani : " + num1);
-        System.out.println("Arrayin ücüncü elemani : " + num3);
-        List<String> list = new ArrayList<String>(Arrays.asList(allElements.split(" ")));
-        System.out.println("List : " + list);
-        List<String> list2 = new ArrayList<>();
+        List<Integer> list2 = new ArrayList<>();
+
         int toplam = 0;
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).contains("-")) {
-                System.out.println("-1");
-                break;
-            } else {
-                elements[i] = list.get(i).replaceAll("\\D", "").trim();
-                list2.add(elements[i]);
-                toplam += Integer.valueOf(list2.get(i));
-            }
+        int i = 0;
+        do {
+            elements[i] = elements[i].replaceAll("[%€$A-Za-z]", "");
+            list2.add(Integer.parseInt(elements[i]));
+            toplam += list2.get(i);
+            i++;
         }
-        System.out.println("Sayisal olmayan karakterlerin kaldirilmis hali : " + list2);
-        System.out.println("Sayisal degerlerin toplam : " + toplam);
+        while (i < elements.length);
+
+        System.out.println("Sayisal olmayan degerlerin kaldirilmis hali : " + list2);
+
+        if (toplam < 0) {
+            System.out.println("-1");
+
+        } else System.out.println("Toplam : " + toplam);
+
     }
 }
-
-
