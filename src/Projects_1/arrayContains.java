@@ -25,6 +25,7 @@ public class arrayContains {
         Scanner scan = new Scanner(System.in);
         String myStr = scan.nextLine();
         String[] arr = myStr.split(" ");
+
         int[] myArr = new int[5];
         for (int i = 0; i < arr.length; i++) {
             int num = Integer.parseInt(arr[i]);
