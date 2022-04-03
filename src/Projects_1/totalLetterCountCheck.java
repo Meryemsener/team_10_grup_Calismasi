@@ -20,6 +20,11 @@ public class totalLetterCountCheck {
 
         //  code Start here don't change before this line
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
-       
+       //kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
+
+        int sayi=1;
+       String str ="ahmet";
+       String str1= "mehmet";
+        String str2=" hakan";
     }
 }
