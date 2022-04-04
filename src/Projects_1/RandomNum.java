@@ -25,6 +25,7 @@ public class RandomNum {
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
 
 
-       
+            int maxSayi = (int)(Math.random()*max);
+            System.out.println(maxSayi);
     }
 }

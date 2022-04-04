@@ -1,6 +1,5 @@
 package Projects_1;
 import java.util.Scanner;
-
 public class PerfectSquare {
     /*
     Given a positive integer num, write a function which returns true if num is a perfect square else false.
@@ -15,7 +14,7 @@ public class PerfectSquare {
         Note: this number is perfect square because 5*5 is 25
         Example 3:
         Input: 14
-        Output: false
+        Output: false.
      */
 
     /*
@@ -41,7 +40,7 @@ public class PerfectSquare {
 
         //  code Start here don't change before this line
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
-
-        
+        //****
     }
+
 }
