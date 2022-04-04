@@ -1,5 +1,4 @@
 package Projects_1;
-
 import java.util.Scanner;
 public class age {
     /*
@@ -47,10 +46,10 @@ public class age {
         }else if (myAge<=20){
             System.out.println("Alkol icmek icin cok gencsin");
 
-        }else if (myAge>=21){
+        }else if (myAge>=21) {
 
             System.out.println("Istedigini yapabilirsin");
         }
-
     }
+
 }
