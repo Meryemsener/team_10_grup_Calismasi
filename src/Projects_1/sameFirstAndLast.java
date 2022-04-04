@@ -26,13 +26,16 @@ public class sameFirstAndLast {
 
         String myStr = scan.nextLine();
 
-        String[] useThisArray = myStr.split("");
+        String[] useThisArray = myStr.split("");// burada atanan arryimi [-,-,-,-] gibi ayirdima yapildi
 
         //  code start here
         // Koda burdan başlayin
 
-
-
-
+        if(useThisArray[0].equals(useThisArray[useThisArray.length-1])){
+        //eger arryimin ilk indexi[0]esitse(.equals)son[arrayim.length-1] indexine
+            System.out.println("true");// true yazsin
+        }else{                      //  esit edilse
+            System.out.println("false"); // false yazsin
+        }
     }
 }

@@ -1,6 +1,5 @@
 package Projects_1;
 import java.util.Scanner;
-
 public class PerfectSquare {
     /*
     Given a positive integer num, write a function which returns true if num is a perfect square else false.
@@ -39,8 +38,9 @@ public class PerfectSquare {
         System.out.print("bir tam sayi giriniz : ");
         int input = scanner.nextInt();
 
-        //  code Start here don't change before this line
+        //  code Start here don't change before this line//
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
+
         isPerfectSquare(input);
         System.out.println(isPerfectSquare(input));
     }
@@ -50,5 +50,8 @@ public class PerfectSquare {
         for (int i = 1; i*i <=num; i++) {
             if(i*i==num)sonuc=true;
              }return sonuc;
+        //****
+
     }
+
 }

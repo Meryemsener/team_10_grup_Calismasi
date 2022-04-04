@@ -22,7 +22,7 @@ ters arrayi yazdır
 
     //Birinci yol
     public static void main(String[] args) {
-<<<<<<< HEAD
+
 
         Scanner scan = new Scanner(System.in);
 
@@ -35,19 +35,22 @@ ters arrayi yazdır
            //Deneme
 
 
-=======
+
         int[] arr ={1,2,3,4,5,6};// int degerinde array dizisini olusturdum
         int tersArr[]=new int[arr.length];// array dizilerin uzunluguna olasmak icin
         int x=0;//  x adinda bir variable olusturdum sifira esitledim
         int y=arr.length-1;
         //  arrayiTersineCevir(x,y,arr,tersArr);// method olusturmak icin yaptim
         System.out.println(Arrays.toString(tersArr));// arrayimi tersini yazdirmak icin
->>>>>>> ustun
+
     }
-    // private static int[] arrayiTersineCevir(int x, int y, int[] arr, int[] tersArr) {
-    // if (Devami Gelecel){
-
-
-    //   }
-    // }
+     private static int[] arrayiTersineCevir(int x, int y, int[] arr, int[] tersArr) {
+         if (y >= 0) {
+             tersArr[x] = arr[y];
+             y--;
+             x++;
+             arrayiTersineCevir(x, y, arr, tersArr);
+         }
+         return tersArr;
+     }
 }
