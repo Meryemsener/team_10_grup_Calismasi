@@ -70,7 +70,7 @@ public class removeDuplicates {
 
 //yeni ekleme
 
-
+        System.out.println("yeni degişiklik");
 
 
 
