@@ -31,10 +31,11 @@ public class RandomNumberBetweenTwoNumbers {
         int min = Integer.parseInt(elements[0]);
         int max = Integer.parseInt(elements[1]);
 
-        //  code Start here don't change before this line
-        // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
-
-       
+        /* code Start here don't change before this line
+        kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
+        */
+        int randomInRange=min+(int)(Math.random()*((max-min)+1));
+        System.out.println(randomInRange);
 
     }
 

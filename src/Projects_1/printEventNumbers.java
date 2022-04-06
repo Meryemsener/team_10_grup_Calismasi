@@ -25,15 +25,21 @@ public class printEventNumbers {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz : "); //Burasi soruda yok sonradan ekledim.
 
         int maxNum = scanner.nextInt();
 
         //  code Start here don't change before this line
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
+        for (int i = 0; i <= maxNum; i++) {
+            if (i%2==0){
+                System.out.print(i+" ");
 
-//        for (int i = 0; i <=maxNum ; i+=2) {
-//            System.out.print(i);
-//        }
+            }
+
+        }
+
+
 
     }
 }

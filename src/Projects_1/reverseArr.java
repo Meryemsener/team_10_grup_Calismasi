@@ -23,6 +23,7 @@ ters arrayi yazdır
     //Birinci yol
     public static void main(String[] args) {
 
+
         Scanner scan = new Scanner(System.in);
 
         String myStr = scan.nextLine();
