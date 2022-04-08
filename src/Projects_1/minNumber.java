@@ -23,6 +23,7 @@ public class minNumber {
       */
 
 
+        /*
             int[][] i1 = new int[][]{{1,2,3}, {2,3,1} , {5,5,5} , {2,1,3}};
 
             int min = 1 ;
@@ -36,7 +37,7 @@ public class minNumber {
 
             }
 
-            System.out.println(min);
+            System.out.println(min);*/
 
 
         }
