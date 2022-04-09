@@ -66,6 +66,8 @@ public class diffBetweenMaxMin {
             int result = max - min;
             System.out.println(result);
 
+
+
         }
 
         }
