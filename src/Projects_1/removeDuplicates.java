@@ -1,4 +1,5 @@
 package Projects_1;
+import java.util.Arrays;
 import java.util.Scanner;
 public class removeDuplicates {
     /*
@@ -28,6 +29,7 @@ public class removeDuplicates {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        System.out.println("sayilar giriniz");
 
         String myStr = scan.nextLine();
 
@@ -42,6 +44,22 @@ public class removeDuplicates {
             useThisArray[i] = num;
 
         }
+        for (int i = 0; i <useThisArray.length ; i++) {
+            for (int j = 0; j <useThisArray.length ; j++) {
+                if (useThisArray[i]!= useThisArray[j]){
+                    int arr2[] = new int[i];
+                    arr2[i]=useThisArray[i];
+
+
+
+
+                }
+
+            }
+            System.out.println();
+
+        }
+
 
 //        code start here
 //        dont change anything before this line
@@ -49,6 +67,11 @@ public class removeDuplicates {
 
         // Kodlamaya burdan başla.bu satırdan önceki satirlarda hicbirşeyi  degiştirme.
         //   useThisLine arrayini kullan
+
+//yeni ekleme
+
+        System.out.println("yeni degişiklik");
+
 
 
     }
