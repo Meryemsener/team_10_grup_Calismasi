@@ -29,14 +29,21 @@ public class FactorialNummer {
 
         //      code start here  use int number
         //      kodu burdan başlatın ve int number kullanın
-        int faktoriyel=1;
-        // faktoriyel islemler 1 den basladigi icin atama 1 den baslar. gibi (factorial:1*2*3*4*5*6=720)
-        for (int i = 1; i <=number ; i++) {
-         //(islem) 1 den basladi ; scan ile aldigimiz sayi ya esit olana kadar (kosul); artma olur
-            faktoriyel*=i;// her dongude i artarak carpma islemi ve atama olur
+        Scanner scan = new Scanner(System.in);
+        int sayi = scan.nextInt();
+        int faktöriyel=1;
+        String faktoriyelAcikYazim = "";
+        for (int i = sayi; i >= 1; i--) {
+            faktöriyel*=i;
+
+            if (i == sayi) {
+                faktoriyelAcikYazim = faktoriyelAcikYazim + i;
+            } else
+                faktoriyelAcikYazim = faktoriyelAcikYazim + "*" + i;
         }
-        System.out.println(faktoriyel);
-        
+        System.out.println(sayi + "! = " + faktoriyelAcikYazim + " =" + faktöriyel);
+
+
     }
 
 }
